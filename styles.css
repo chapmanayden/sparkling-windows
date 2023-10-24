@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    background-color: #333;
+    background-color: #2a2a2a;
     color: #fff;
 }
 
@@ -38,7 +38,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2a2a2a;
     color: #fff;
     padding: 20px 0;
 }
@@ -66,4 +66,20 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }
